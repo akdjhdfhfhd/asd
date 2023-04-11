@@ -31,7 +31,7 @@ ALIVE_NAME = getenv("ALIVE_NAME", "Levina")
 OWNER_ID = int(os.environ.get("OWNER_ID"))
 DATABASE_URL = os.environ.get("DATABASE_URL")  # fill with your mongodb url
 # make a private channel and get the channel id
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "levinachanne") 
 # just fill with True or False (optional)
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
@@ -42,6 +42,6 @@ U_BRANCH = "main"
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 UPSTREAM_REPO = os.environ.get(
-    "UPSTREAM_REPO", "https://github.com/levina-lab/VeezMusic"
+    "UPSTREAM_REPO", "https://github.com/akdjhdfhfhd/asd"
 )
 HEROKU_URL = fetch_heroku_git_url(HEROKU_API_KEY, HEROKU_APP_NAME)
